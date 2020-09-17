@@ -8,7 +8,7 @@ body {
     font-weight: lighter;
  }
 
-#first{
+ul#first{
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -17,10 +17,12 @@ body {
     
 }
 
- #head{
+ul li{
    float: right;
-     margin: 50px;
+     margin: 30px;
  }
+
+ 
 
   .first-image {
     background-image: url('plan.jpg');
@@ -61,4 +63,9 @@ body {
   float: right;
   padding-bottom: 50px;
   padding-right: 50px;
+}
+
+@media screen (min-width:579px){
+  #content{flex-direction: column;}
+  .present{width: 200px;}
 }
