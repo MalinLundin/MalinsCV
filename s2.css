@@ -44,17 +44,18 @@ ul li{
     color: white;
   }
 
-  #content{
+  .content{
       display: flex;
       flex-direction: row;
   }
  .present{
      margin: auto;
      margin-top: 50px;
+     margin-bottom: 70px;
     
     }
 
-#contact{
+.contact{
   font-weight: lighter;
   text-align: center;
 }
@@ -65,7 +66,8 @@ ul li{
   padding-right: 50px;
 }
 
-@media screen (min-width:579px){
-  #content{flex-direction: column;}
-  .present{width: 200px;}
+@media screen and (max-width:600px){
+  .content{flex-direction: column-reverse; margin-right: 10px;}
+  .first-image{height: 200px;}
+  #me{height: 200px;}
 }
