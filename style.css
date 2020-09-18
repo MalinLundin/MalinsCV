@@ -1,13 +1,14 @@
+/*Ställer in hela bodyn stil*/
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
-
+/*Ställer in hela h3 stil*/
 h3 {
 font-weight: lighter;
 }
-
+/*Gör menyn flexibel*/
 ul#first{
   display: flex;
   flex-direction: row;
@@ -16,13 +17,12 @@ ul#first{
   list-style-type: none;
   
 }
-
+/*Ändra utrymmet i ul*/
 ul li{
-   float: right;
    margin: 30px;
 }
 
-
+/*Bilden plan läggs in och ändrar utseende samt att den relativ*/
 .first-image {
   background-image: url('plan.jpg');
   background-color: #cccccc;
@@ -32,7 +32,7 @@ ul li{
   background-size: cover;
   position: relative;
 }
-
+/*Texten ovanför bilden plan.jpg, ändrar stil och placering*/
 .first-text {
   text-align: center;
   font-size: 40px;
@@ -42,34 +42,35 @@ ul li{
   transform: translate(-50%, -50%);
   color: white;
 }
-
+/*class för section 1 där presentation och bild finns. Gör dem flexibla för olika skärmar*/
 .content{
   display: flex;
   flex-direction: row;
-}
-.present{
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-left: 8%;
   margin-bottom: 70px;
-  
 }
-
+/*class för divarna i .content. Ändarr utrymmet emellan dem*/
+.present{
+  margin: 60px;
+}
+/*class för section 2 där kontaktuppgifter finns.Ändrar utseendet*/
 .contact{
   font-weight: lighter;
   text-align: center;
 }
-
+/*class för div med länk för att komam till sidans topp. Vart den ska ligga på sidans botten*/
 .back{
   float: right;
   padding-bottom: 50px;
   padding-right: 50px;
 }
-
+/*De som ändras när skämen storlek bli max 600. */
 @media screen and (max-width:600px){
-  .first-image{height: 200px;}
-  .content{flex-direction: column-reverse; margin-right: 10px;}
-  .present{margin-left: 5px;}
-  #me{height: 200px; margin-left: 85px;}
-  .present{margin-bottom: 10px;}
-  #no{display: none;}
+  .first-image{height: 200px;} /*Första bilden mindre*/
+  .content{flex-direction: column-reverse; justify-content: center; /*Ändrar conten så text och bild blir i en colum och centrerar samt utrymmet runt om ändras.*/
+           align-items: center; margin-left:10px; margin-top:10px; margin-bottom: 10px;} 
+  .present{margin: 10px;} /*Ändra utrymme mellan text och bild i present divarna ´*/
+  #me{height: 300px;} /*Id på jag.jpg bild för ändar storlek*/ 
+  #no{display: none;} /*Id för att ta bort <br>*/
 }
