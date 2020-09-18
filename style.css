@@ -76,9 +76,11 @@ ul li{
 /*De som ändras när skämen storlek bli max 600. */
 @media screen and (max-width:600px){
   .first-image{height: 200px;} /*Första bilden mindre*/
-  .content{flex-direction: column-reverse; justify-content: center; /*Ändrar conten så text och bild blir i en colum och centrerar samt utrymmet runt om ändras.*/
-           align-items: center; margin-left:10px; margin-top:10px; margin-bottom: 10px;} 
+  .content{flex-direction: column-reverse;align-items: center;  /*Ändrar conten så text och bild blir i en colum och centrerar samt utrymmet runt om ändras.*/
+           margin-left:10px; margin-top:10px; margin-bottom: 10px;} 
   .present{margin: 10px;} /*Ändra utrymme mellan text och bild i present divarna ´*/
   #me{height: 300px;} /*Id på jag.jpg bild för ändar storlek*/ 
   #no{display: none;} /*Id för att ta bort <br>*/
 }
+
+/*align-items: center;   justify-content: center;*/
