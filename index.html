@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <!--Styleshet för css filen samt länk till fontawseome, som ger olika ikoner-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/ccad704e41.js" crossorigin="anonymous"></script>
 <title>Mitt CV</title>
 </head>
 <header>
-  <nav>
+  <nav> <!--menyn som är länkade till id content och contact-->
     <ul id="first">
       <li ><a href="#content">Om Malin</a></li>
       <li ><a href="#contact">Kontakt</a></li>
     </ul> 
-    
   </nav>
 </header>
 <body>
-
+<!--Första section som innhåller en div med bild som innehåller en div med text-->
 <section>
 <div class="first-image">
   <div class="first-text">
@@ -24,10 +23,10 @@
    </div>
 </div>
 </section >
-
+<!--section 2, 2 divar en med text och en med en bild, som är flex. -->
 <section class="content" id="content">
 <div class="present">
-  <hr>
+  <hr>  <!-- hr för snygga linjer som ramar in texten-->
     <h3>Om mig</h3>
     <p>Malin Lundin heter jag och är 24 år kommer från orust. Jag bor i Jönköping med min sambo.<br id="no"> På fritiden umgås jag med min familj och vänner. Jag spelar även fotboll och många timmar <br id="no"> utav helgen går inte bara till att spela fotboll utan även kolla när andra spelar. </p>
     <hr>
@@ -43,7 +42,7 @@
 </div> 
 </section>
 <hr>
-
+<!--scetion3 inhåller en div med text och länkar.-->
 <section class="contact" id="contact">
    <div>
        <h3>Kontakt</h3>
@@ -51,6 +50,7 @@
        <i class="fab fa-github" ></i><p><strong>GitHub: </strong><a href="//github.com/MalinLundin">Mitt konto</p>
   </div>
 </section>
+<!--En div för att gör en länk, kopplade till menyn högst upp på sidan-->
 <div class="back">
   <a href="#first">till toppen</a>
 </div>
