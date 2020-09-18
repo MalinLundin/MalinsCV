@@ -4,10 +4,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
+
 /*Ställer in hela h3 stil*/
 h3 {
 font-weight: lighter;
 }
+
 /*Gör menyn flexibel*/
 ul#first{
   display: flex;
@@ -15,8 +17,8 @@ ul#first{
   margin: 0;
   padding:0;
   list-style-type: none;
-  
 }
+
 /*Ändra utrymmet i ul*/
 ul li{
    margin: 30px;
@@ -32,6 +34,7 @@ ul li{
   background-size: cover;
   position: relative;
 }
+
 /*Texten ovanför bilden plan.jpg, ändrar stil och placering*/
 .first-text {
   text-align: center;
@@ -42,6 +45,7 @@ ul li{
   transform: translate(-50%, -50%);
   color: white;
 }
+
 /*class för section 1 där presentation och bild finns. Gör dem flexibla för olika skärmar*/
 .content{
   display: flex;
@@ -50,21 +54,25 @@ ul li{
   margin-left: 8%;
   margin-bottom: 70px;
 }
+
 /*class för divarna i .content. Ändarr utrymmet emellan dem*/
 .present{
   margin: 60px;
 }
+
 /*class för section 2 där kontaktuppgifter finns.Ändrar utseendet*/
 .contact{
   font-weight: lighter;
   text-align: center;
 }
+
 /*class för div med länk för att komam till sidans topp. Vart den ska ligga på sidans botten*/
 .back{
   float: right;
   padding-bottom: 50px;
   padding-right: 50px;
 }
+
 /*De som ändras när skämen storlek bli max 600. */
 @media screen and (max-width:600px){
   .first-image{height: 200px;} /*Första bilden mindre*/
