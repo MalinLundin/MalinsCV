@@ -69,7 +69,7 @@ ul li{
   .first-image{height: 200px;}
   .content{flex-direction: column-reverse; margin-right: 10px;}
   .present{margin-left: 5px;}
-  #me{height: 200px; margin-left: 80px;}
+  #me{height: 200px; margin-left: 85px;}
   .present{margin-bottom: 10px;}
   #no{display: none;}
 }
